@@ -9,7 +9,7 @@ const QuotePage = () => {
             {
                 data.map((item) => {
                     return(
-                    <div className='card'>
+                    <div className='card' key={item.author}>
                         <p>{item.quote}</p>
                         <span>{item.author}</span>
                     </div>
